@@ -1,0 +1,45 @@
+@import 'welcome';
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-row-small {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .flex-column-small {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  .flex-justify-center-small {
+    justify-content: center;
+  }
+
+  .flex-align-center-small {
+    align-items: center;
+  }
+}

@@ -1,0 +1,6 @@
+<% if @reservation.errors.empty? %>
+  alert('Votre réservation a bien été prise en compte')
+<% else %>
+  var errors = <%= @reservation.errors.full_messages.to_json.html_safe %>;
+  alert("Il y a des erreurs dans votre formulaire: \n" + errors.map(function(error) { return "- "+error+"\n" }).join(''));
+<% end %>

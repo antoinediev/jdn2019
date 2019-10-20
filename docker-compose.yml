@@ -1,0 +1,20 @@
+version: '2'
+services:
+  jdn-dev:
+    image: postgres:latest
+    container_name: jdn-dev
+    environment:
+      POSTGRES_DB: jdn-dev
+      POSTGRES_USER: jdn
+      POSTGRES_PASSWORD:
+    ports:
+      - 6010:5432/tcp
+  jdn-test:
+    image: postgres:latest
+    container_name: jdn-test
+    environment:
+      POSTGRES_DB: jdn-test
+      POSTGRES_USER: jdn
+      POSTGRES_PASSWORD:
+    ports:
+      - 6011:5432/tcp
