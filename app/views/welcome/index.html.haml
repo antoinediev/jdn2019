@@ -13,7 +13,7 @@
       %p{ :style => "color: #FFD700;"}
         Le comité JDN 2019 est heureux de vous inviter pour une soirée d’exception sous le thème des oscars.
         %br/
-        Le Samedi 16 Novembre 2019 à 19h30, aux
+        Le Samedi 16 Novembre 2019 à 19h30, au
         %a{href: 'https://www.google.com/maps/place/Hôtel+Mercure+Lille+Aéroport/@50.5838428,3.0907975,17z/data=!3m1!4b1!4m9!3m8!1s0x47c2d4275c36c0b1:0x16cb4a904f640e96!5m3!1s2018-10-14!4m1!1i2!8m2!3d50.5838428!4d3.0929862', target: '_blank'} Mercure Hotel de Lesquin.
       %ul.actions.special
         %li
@@ -69,7 +69,7 @@
     .inner
       %header
         %h2{ :style => "color: #FFD700;"} Le Menu
-        %p{ :style => "font-family: 'Nanum Brush Script', cursive; color: #FFFFFF; font-size: 28px;"}
+        %p{ :style => "color: #FFFFFF;"}
           Entrée : 
           </br>
           Saumon gravelax aux agrumes 
@@ -100,13 +100,16 @@
           %h2 Hôtel :
           %p{ :style => "color: #FFFFFF;"} L'hôtel met à disposition des chambres à tarifs préférenciels. 
           %b 75€
-          la chambre 1 lit + petit-déjeuner.
+          la chambre 1 lit + petit-déjeuner (2 personnes).
           %br/ 
           %b 85€
-          la chambre 2 lits + petit-déjeuner.
+          la chambre 2 lits + petit-déjeuner (4 personnes).
           %br/
           Taxe de séjour de 2€48 par personne. 
-          %h6 Adresse de réservation: H1098-RE@accor.com ou  03 20 87 46 46, merci de bien préciser CENTRAL LILLE IG2I. 
+          %h6 
+            Adresse de réservation: 
+            %a{:href => 'mailto:H1098-RE@accor.com'} H1098-RE@accor.com 
+            ou  03 20 87 46 46, merci de bien préciser CENTRAL LILLE IG2I. 
   / Footer
   %footer#footer
     = form_for @reservation, remote: true do |form|
