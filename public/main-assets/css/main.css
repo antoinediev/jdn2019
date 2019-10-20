@@ -1804,13 +1804,13 @@ input, select, textarea {
 
 		}
 
-	@media screen and (max-width: 980px) {
+	/*@media screen and (max-width: 980px) {
 
 		header br {
 			display: none;
 		}
 
-	}
+	}*/
 
 /* Form */
 
@@ -2742,10 +2742,10 @@ input, select, textarea {
 			.spotlight {
 				display: block;
 			}
-
+				/*
 				.spotlight br {
 					display: none;
-				}
+				}*/
 
 				.spotlight .image {
 					width: 100%;
@@ -3687,10 +3687,10 @@ input, select, textarea {
 				#banner h2 {
 					font-size: 1.25em;
 				}
-
+				/*
 				#banner br {
 					display: none;
-				}
+				}*/
 
 				#banner .more {
 					display: none;

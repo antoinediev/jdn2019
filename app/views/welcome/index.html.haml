@@ -33,15 +33,11 @@
           %b repas gastronomique
           suivi
           %b d’une soirée dansante,
-          la remise des diplômes de la promotion sortante: la promotion 2018 !
+          la remise des diplômes de la promotion sortante: la promotion 2019 !
           %br/
           La JDN est l’occasion pour les différentes promotions de se retrouver, de la première, sortie en 1997, aux L1 tout juste
-          entrés (promotion 2023 !). Elle a également pour but de faire connaître l’école aux professionnels, et pour certains, c’est
-          aussi le moment idéal pour revoir notre
-          %b Alain Husson national.
-          %br/
-          Après le succès des 13ème Rencontres IG2Iennes, cette soirée s’annonce exceptionnelle tant par son budget que par son lieu:
-          %b les Salons Cortina.
+          entrés (promotion 2024 !). 
+          
   %section#one.wrapper.style4.special
     .inner
       %header
@@ -67,7 +63,7 @@
       .content
         %h2{ :style => "color: #FFD700;"}
           Un groupe de musique et une soirée dansante 
-        %p Entrer dans la danse.
+        %p Pour danser jusqu'au bout de la nuit.
   / Three
   %section#one.wrapper.style4.special
     .inner
@@ -75,17 +71,17 @@
         %h2{ :style => "color: #FFD700;"} Le Menu
         %p{ :style => "font-family: 'Nanum Brush Script', cursive; color: #FFFFFF; font-size: 28px;"}
           Entrée : 
-          %br/
-          Gravlax de Saumon aux agrumes en carpaccio 
-          %br/
-          %br/
+          </br>
+          Saumon gravelax aux agrumes 
+          %br
+          %br
           Plat :
-          %br/
+          %br
           Magret de canard, sauce épicé
-          %br/
-          %br/
+          %br
+          %br
           Dessert : 
-          %br/
+          %br
           Assortiments de mignardises du Chef Pâtisier Christophe CHALOPIN
           %br/ 
           %br/
@@ -138,7 +134,7 @@
               = rm.number_field :count, class: 'menu-input', :value => 0, :required => true
       .flex-row.flex-align-center.flex-justify-center
         = form.submit "S'inscrire"
-    %a{ :download => "planTable.png", :href => "images/film.jpg" } plan de table
+    %a{ :download => "planTable.png", :href => "images/planTable.png" } plan de table
     #reservations
       - @tables.in_groups_of(4).each do |table_group|
         .flex-row.flex-column-small
