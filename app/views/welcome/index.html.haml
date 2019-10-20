@@ -5,7 +5,7 @@
   / Header
   %header#header.alt{:style => "background-color: #000000;"}
     %h1
-      %a{:href => "index.html", :style => "color: #FFD700	;"} Just Diplomed Night 2019
+      %a{:style => "color: #FFD700	;"} Just Diplomed Night 2019
   / Banner
   %section#banner
     .inner
@@ -127,7 +127,8 @@
               = rm.number_field :count, class: 'menu-input', :value => 0, :required => true, :min => 0, :max => 10
       .flex-row.flex-align-center.flex-justify-center
         = form.submit "S'inscrire"
-    %a{ :download => "planTable.png", :href => "images/planTable.png" } plan de table
+    
+    %a{ :download => "planTable.png", :href => "images/planTable.png", :target => "_blank" } plan de table
     #reservations
       - @tables.in_groups_of(4).each do |table_group|
         .flex-row.flex-column-small
