@@ -10,49 +10,7 @@
 AdminUser.create!(email: 'admin-jdn@ig2i.fr', password: 'oscar', password_confirmation: 'password') if Rails.env.development?
 
 %w[
-  Fight Club
-  Pulp Fiction
-  Very Bad Trip
-  Blade Runner
-  Interstellar 
-  Le parrain
-  Inception
-  The dark knight 
-  Le seigneur des anneaux
-  Forrest Gump
-  Jumanji
-  Dikkenek
-  Apocalypse now
-  Retour vers le futur
-  Matrix
-  Le voyage de chihiro 
-  Pirate des caraibes
-  Into the wild 
-  Gladiator
-  Drive
-  Les évadés 
-  Les affranchis 
-  Taxi
-  La ligne verte 
-  Django Unchained
-  Shutter Island
-  Kill bill
-  Jurassic Park
-  Requiem for a dream
-  Inglourious Basterds
-  Asterix Mission Cléopatre
-  The truman Show
-  Titanic
-  Gran torino
-  Léon 
-  La cité de la peur 
-  Psychose 
-  American Pie
-  La haine
-  Le cinquième élément 
-  Terminator
-  Les temps modernes
-  OSS117 
+  OSS117
 ].each do |name|
   Table.create(name: name, capacity: 10)
 end
