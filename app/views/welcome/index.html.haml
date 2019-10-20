@@ -134,7 +134,7 @@
               = rm.hidden_field :menu_id, value: menu.id
               %label.menu-label
                 = "Nombre de menus \"#{menu.name}\""
-              = rm.number_field :count, class: 'menu-input', :value => 0, :required => true
+              = rm.number_field :count, class: 'menu-input', :value => 0, :required => true, :min => 0, :max => 10
       .flex-row.flex-align-center.flex-justify-center
         = form.submit "S'inscrire"
     %a{ :download => "planTable.png", :href => "images/planTable.png" } plan de table
