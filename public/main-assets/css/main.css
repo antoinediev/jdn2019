@@ -101,7 +101,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, textarea {
+	body, input, select, textarea {
 		color: #FFF;
 		font-family: "Open Sans", Helvetica, sans-serif;
 		font-size: 15pt;
@@ -110,13 +110,11 @@ input, select, textarea {
 		line-height: 1.65em;
 	}
 
-	select {
-		color: #000;
-		font-family: "Open Sans", Helvetica, sans-serif;
-		font-size: 15pt;
-		font-weight: 400;
-		letter-spacing: 0.075em;
-		line-height: 1.65em;
+	select option {
+		margin: 40px;
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
 	}
 
 		@media screen and (max-width: 1680px) {
