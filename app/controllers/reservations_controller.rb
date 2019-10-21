@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ReservationsController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+  skip_before_action :verify_authenticity_token
   protect_from_forgery prepend: true, with: :exception
   before_action :set_reservation, only: %i[show edit update destroy]
 
