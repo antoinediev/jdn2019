@@ -112,18 +112,19 @@
             ou  03 20 87 46 46. Merci de bien préciser CENTRALE LILLE IG2I. 
   / Footer
   %footer#footer
+    %h1{ :style => "color:red;font-size:24px;"} INSCRIPTIONS TERMINEES
     = form_for @reservation, remote: true do |form|
       .flex-row.flex-column-small
         .flex-column
           %h4
             Vos informations
-          = form.text_field :firstname, placeholder: 'Prénom', :required => true
-          = form.text_field :lastname, placeholder: 'Nom', :required => true
-          = form.text_field :phone_number, placeholder: 'Numéro de téléphone', :required => true
-          = form.text_area :friends, placeholder: 'Nom des personnes accompagnantes si différent'
+          = form.text_field :firstname, placeholder: 'Prénom', :required => true, :disabled => true
+          = form.text_field :lastname, placeholder: 'Nom', :required => true, :disabled => true
+          = form.text_field :phone_number, placeholder: 'Numéro de téléphone', :required => true, :disabled => true
+          = form.text_area :friends, placeholder: 'Nom des personnes accompagnantes si différent', :disabled => true
           %br/
           = form.label "Mode de paiement"
-          = form.select :paiementMode, ["Sur place (liquide & chèque)","En ligne via lydia avant l'événement"]
+          = form.select :paiementMode, ["Sur place (liquide & chèque)","En ligne via lydia avant l'événement"], :disabled => true
           %i Pour les paiements avant l'événement nous vous enverrons une demande de paiement sur lydia via le numèro de téléphone utilisé lors de cette inscription.
         .flex-column
           %h4
